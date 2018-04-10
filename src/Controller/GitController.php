@@ -28,10 +28,8 @@ class GitController extends Controller
             $repositoryDetails['Repositories'][] = $repositoryList;
         }
 
-        return $this->render('repositoryDetails.html.twig',
-            array(
-                'repositoryDetails' => $repositoryDetails
-            )
-        );
+        return $this->render('repositoryDetails.html.twig',[
+            'repositoryDetails' => $repositoryDetails
+            ]);
     }
 }
